@@ -4,7 +4,7 @@
 Pelota::Pelota()
 {
 
-    _velocity = { 0,2 };
+    _velocity = { 0,0 };
     _texture.loadFromFile("imagenes/pelota.png");
     _sprite.setTexture(_texture);
     _sprite.setOrigin(_sprite.getGlobalBounds().width/2, _sprite.getGlobalBounds().height/2);
@@ -17,37 +17,28 @@ Pelota::Pelota()
 
 void Pelota::disparo()
 {
-    if (!_positionInitial)
-    {
-        _sprite.move(_velocity);
-    }
-    if (sf::Keyboard::isKeyPressed(sf::Keyboard::Up)) {
+        float deltatime = 2;
+        
+        
+        if (sf::Keyboard::isKeyPressed(sf::Keyboard::Up)) {
         _positionInitial = false;
-    }
+        }
+
+        if (!_positionInitial)
+        {
+            _velocity = { 0, 7 };
+            _sprite.move(-_velocity );
+            if (_sprite.getPosition().y <800- deltatime*266)
+            {
+                _velocity = { 0, 0 };
+                _sprite.move(_velocity);
+                _positionInitial = true;
+            }
+        }
 
 
-
-
-    if (_sprite.getPosition().x < 0) {
-
-        _sprite.setPosition(0, _sprite.getPosition().y);
-    }
-    if (_sprite.getPosition().x > 600) {
-
-        _sprite.setPosition(600, _sprite.getPosition().y);
-    }
-
-
-    /* Movimientos en Y */
-    // Arriba
-    if (_sprite.getPosition().y < 0+_sprite.getGlobalBounds().height/2)
-    {
-        _velocity.y = 0;
-    }
-    // Abajo
-    if (_sprite.getPosition().y > 760) {
-        _velocity.y = -_velocity.y;
-    }
+       
+       
 }
 
 void Pelota::setPosition()
@@ -67,3 +58,4 @@ void Pelota::draw(sf::RenderWindow& window)
 {
     window.draw(_sprite);
 }
+
