@@ -1,4 +1,5 @@
-﻿  Main.cpp
-  JuegoSoccer.vcxproj -> C:\Users\Daniel Guillen\Documents\GitHub\proyectoFullBall\JuegoSoccer\x64\Debug\JuegoSoccer.exe
-  C:\Users\Daniel Guillen\Documents\GitHub\proyectoFullBall\JuegoSoccer\packages\SFML-cpp.redist.2.5.1.1\build\native\bin\x64\Debug\openal32.dll
+﻿  Pelota.cpp
+D:\Repositorios Github\proyectoFullBall\JuegoSoccer\JuegoSoccer\Pelota.cpp(104,12): warning C4244: 'return': conversión de 'int' a 'float'; posible pérdida de datos
+  JuegoSoccer.vcxproj -> D:\Repositorios Github\proyectoFullBall\JuegoSoccer\x64\Debug\JuegoSoccer.exe
+  D:\Repositorios Github\proyectoFullBall\JuegoSoccer\packages\SFML-cpp.redist.2.5.1.1\build\native\bin\x64\Debug\openal32.dll
   1 archivo(s) copiado(s)

@@ -36,6 +36,7 @@ int main()
         pateador.movimientoDelPateador();
         balon.disparo();
         balon.setPosition();
+        balon.cronometro();
         //balon.update();
 
 

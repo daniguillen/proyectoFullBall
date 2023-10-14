@@ -1,7 +1,11 @@
 #include "pelota.h"
 #include <iostream>
-#include <iostream>
+#include <thread>
+#include <chrono>
 
+using namespace std;
+using namespace std::this_thread;
+using namespace std:: chrono;
 
 Pelota::Pelota()
 {
@@ -70,4 +74,31 @@ void Pelota::setPosition()
 void Pelota::draw(sf::RenderWindow& window)
 {
     window.draw(_sprite);
+}
+
+
+
+
+
+float Pelota::cronometro()
+{
+    //contador = 0;
+     
+    
+    if (sf::Keyboard::isKeyPressed(sf::Keyboard::A) && !BanderaCronometro) {
+        
+        BanderaCronometro = true;
+        sleep_for(seconds(1));
+
+        contador++;
+        cout << "Contador: " << contador;
+        cout << endl;
+    }
+
+    if (BanderaCronometro) {
+        BanderaCronometro = false;
+        //contador = 0;
+    }
+
+    return contador;
 }

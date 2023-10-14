@@ -1,4 +1,5 @@
 #pragma once
+
 #include <SFML\Graphics.hpp>
 #include "SFML/Graphics.hpp"
 class Pelota
@@ -17,4 +18,8 @@ public:
 	void setPosition();
 	//void draw(sf::RenderTarget& target, sf::RenderStates states) const override;
 	void draw(sf::RenderWindow&);
+	float cronometro();
+	int contador=0;
+	float deltaTime;
+	bool BanderaCronometro=false;
 };

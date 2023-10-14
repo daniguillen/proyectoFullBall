@@ -9,8 +9,6 @@ Arquero::Arquero() {
   
     Sprite_Arquero.setPosition(Sprite_Arquero.getPosition().x, 600);
     Sprite_Arquero.setPosition(Sprite_Arquero.getPosition().y, 290);
-    
-   
 
 }
 
