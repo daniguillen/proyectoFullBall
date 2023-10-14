@@ -16,7 +16,7 @@ int main()
     Cancha nuevaCancha;
     Arco nuevoArco;
     Pelota balon;
-    
+    float auxiliar2 = 0.0;
     //Game Loop (Update del juego)
     while (window.isOpen())
     {
@@ -30,12 +30,18 @@ int main()
            
 
 
-       
+        
         portero.movimientoTecladoArquero();
         portero.getPosicionObjeto();
         balon.setPosition();
-        balon.disparo();
-       
+        if (sf::Keyboard::isKeyPressed(sf::Keyboard::Space)){
+        balon.cronometro();
+        
+        auxiliar2 = balon.cronometro();
+        }
+        balon.disparo(auxiliar2);
+
+        
 
 
         window.clear();

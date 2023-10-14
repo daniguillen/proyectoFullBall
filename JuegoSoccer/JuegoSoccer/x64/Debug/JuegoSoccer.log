@@ -1,6 +1,8 @@
-﻿  Pelota.cpp
+﻿  Main.cpp
+  Pelota.cpp
 C:\Users\fedex\Documents\GitHub\proyectoFullBall\JuegoSoccer\JuegoSoccer\Pelota.cpp(12,28): warning C4305: 'argumento': truncamiento de 'double' a 'float'
 C:\Users\fedex\Documents\GitHub\proyectoFullBall\JuegoSoccer\JuegoSoccer\Pelota.cpp(12,22): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+  Generando código...
   JuegoSoccer.vcxproj -> C:\Users\fedex\Documents\GitHub\proyectoFullBall\JuegoSoccer\x64\Debug\JuegoSoccer.exe
   C:\Users\fedex\Documents\GitHub\proyectoFullBall\JuegoSoccer\packages\SFML-cpp.redist.2.5.1.1\build\native\bin\x64\Debug\openal32.dll
   1 archivo(s) copiado(s)
