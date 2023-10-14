@@ -7,7 +7,7 @@
 int main()
 {
     //resolucion
-    sf::RenderWindow window(sf::VideoMode(1200, 600), "FullBall Soccer");
+    sf::RenderWindow window(sf::VideoMode(1200, 800), "FullBall Soccer");
     window.setFramerateLimit(60);
 
 
@@ -27,15 +27,16 @@ int main()
                 window.close();
 
         }
-            //comando CMD -Joy
+           
 
 
        
         portero.movimientoTecladoArquero();
         portero.getPosicionObjeto();
-        pateador.movimientoDelPateador();
+      //  pateador.movimientoDelPateador();
+        balon.setPosition();
         balon.disparo();
-        //balon.update();
+       
 
 
         window.clear();
@@ -43,7 +44,7 @@ int main()
         nuevaCancha.draw(window);
         portero.draw(window);
         balon.draw(window);
-        window.draw(pateador);
+     //   window.draw(pateador);
         window.display();
         
     }
