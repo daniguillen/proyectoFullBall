@@ -91,4 +91,3 @@ void Arquero::draw(sf::RenderWindow& window)
 {
     window.draw(Sprite_Arquero);
 }
-

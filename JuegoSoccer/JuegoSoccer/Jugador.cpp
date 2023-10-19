@@ -15,7 +15,7 @@ Jugador::Jugador()
 
     //esto es de chat gpt
     int frame_actual = 0;
-    int total_frames = 5; // Tienes 5 frames de animación
+    int total_frames = 5; // Tienes 5 frames de animaciï¿½n
     sf::Clock reloj_animacion;
     float velocidad_animacion = 1.0f;
 
@@ -44,7 +44,7 @@ void Jugador::draw(sf::RenderWindow& window)
 */
 void Jugador::movimientoDelPateador() {
     int frame_actual = 0;
-    int total_frames = 5; // Supongamos que tienes 4 frames de animación
+    int total_frames = 5; // Supongamos que tienes 4 frames de animaciï¿½n
     sf::Clock reloj_animacion;
     float velocidad_animacion = 00.1f;
     if (sf::Keyboard::isKeyPressed(sf::Keyboard::Up)) {
@@ -58,7 +58,7 @@ void Jugador::movimientoDelPateador() {
             reloj_animacion.restart();
         
 
-        // Configurar el rectángulo de la textura según el frame actual
+        // Configurar el rectï¿½ngulo de la textura segï¿½n el frame actual
         int frame_ancho = 100; // Ancho de cada frame
         int frame_alto = 80; // Alto de cada frame
         sf::IntRect rect_movimiento_pateador(frame_actual * frame_ancho, 0, frame_ancho, frame_alto);
