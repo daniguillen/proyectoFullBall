@@ -1,4 +1,13 @@
-﻿  Main.cpp
+﻿  Instrucciones.cpp
+C:\Users\Daniel Guillen\Documents\GitHub\proyectoFullBall\JuegoSoccer\JuegoSoccer\Instrucciones.cpp(8,27): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Daniel Guillen\Documents\GitHub\proyectoFullBall\JuegoSoccer\JuegoSoccer\Instrucciones.cpp(8,22): warning C4305: 'argument': truncation from 'double' to 'float'
+  Main.cpp
+C:\Users\Daniel Guillen\Documents\GitHub\proyectoFullBall\JuegoSoccer\JuegoSoccer\Pelota.h(22,38): warning C4244: 'initializing': conversion from 'T' to 'const int', possible loss of data
+          with
+          [
+              T=float
+          ]
+  Generating Code...
   JuegoSoccer.vcxproj -> C:\Users\Daniel Guillen\Documents\GitHub\proyectoFullBall\JuegoSoccer\x64\Debug\JuegoSoccer.exe
   C:\Users\Daniel Guillen\Documents\GitHub\proyectoFullBall\JuegoSoccer\packages\SFML-cpp.redist.2.5.1.1\build\native\bin\x64\Debug\openal32.dll
   1 archivo(s) copiado(s)
